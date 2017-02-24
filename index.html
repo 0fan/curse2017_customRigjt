@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>course2017_customRight</title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body style="height: 6666px;">
+	<div class="content">
+		<h1>自定义右键菜单</h1>
+		<div class="customRight-block">
+			<h2>客户区坐标</h2>
+			<p>
+				这个位置保存在事件对象的clientX和clientY属性中，它们的值表示事件发生时鼠标指针在视口中的水平和垂直坐标。注意，这些值不包括页面滚动的距离，因此这个位置并不表示鼠标在页面上的位置。
+			</p>
+			<h2>页面坐标</h2>
+			<p>
+				通过客户坐标能够知道鼠标在视口中什么位置发生的，而页面坐标通过事件对象的pageX和pageY属性，能够告诉你事件是在页面中的什么位置发生的。这两个属性表示鼠标光标在页面中的位置，因此坐标是从页面本身而非视口的左边和顶边计算的。
+			</p>
+			<h2>屏幕坐标位置</h2>
+			<p>
+				鼠标事件发生时，不仅会有相对于浏览器窗口的位置，还有一个相对于整个电脑屏幕的位置。而通过screenX和screenY属性就可以确定鼠标事件发生时鼠标指针相对于世整个屏幕的坐标信息。
+			</p>
+		</div>
+	</div>
+	<div class="customRight">
+		<div class="customRight-wrap">
+			<div class="customRight-item">Menu item 1</div>
+			<div class="customRight-item">Menu item 2</div>
+		</div>
+	</div>
+</body>
+<script src='js/customRight.js'></script>
+</html>
