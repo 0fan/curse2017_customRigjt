@@ -13,7 +13,7 @@ window.onload = function(){
 			customRight.style.left    = x + 'px';
 			customRight.style.top     = y + 'px';
 			customRight.style.display = 'block';
-			/*e.preventDefault();*/
+			e.preventDefault();
 			return false;
 		}else{
 			customRight.style.display = 'none';
