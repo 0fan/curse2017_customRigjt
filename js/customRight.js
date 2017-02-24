@@ -1,8 +1,5 @@
 window.onload = function(){
 	document.addEventListener('contextmenu',function(e){
-
-		e.preventDefault();
-
 		var customRight = document.querySelector('.customRight'),
 			container   = document.querySelector('.customRight-block'),
 			containerX  = container.offsetLeft,
@@ -16,6 +13,8 @@ window.onload = function(){
 			customRight.style.left    = x + 'px';
 			customRight.style.top     = y + 'px';
 			customRight.style.display = 'block';
+			/*e.preventDefault();*/
+			return false;
 		}else{
 			customRight.style.display = 'none';
 		}
